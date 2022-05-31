@@ -6,13 +6,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script defer src="bitsearch.js">
-        </script>
-        <title>BitSeacrch</title>
-        <style>
-            *{
-                margin:0;
-            }
-        </style>
+    </script>
+    <title>BitSeacrch</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        th,
+        td {
+            padding: 10px 20px;
+            border: 1px solid #000;
+        }
+
+        input, button {
+            border-radius: 5px;
+        }
+    </style>
 </head>
 
 
@@ -24,12 +39,12 @@
         <span><input type="button" value="저장" id="getBtn"></span>
         <span><input type="button" value="출력" id="outBtn"></span><br>
         <input type="text" id="searchBar" placeholder="검색할 물건">
-        <button type="button" id="serachBtn" value="Search">Search</button>
+        <button type="button" id="serachBtn" value="Search">Search</button><br>
+        <button type="button" id="menuBTn" style="width: 209px;">Menu</button>
     </div>
-    <div>
-        <p id ="outPrint"></p>
+    <div id ="itemList">
     </div>
-
+    <p id="outPrint"></p>
 </body>
 
 </html>
